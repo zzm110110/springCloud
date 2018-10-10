@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HiController {
 
-    @Value("${config-server}")
+    @Value("${democonfigclient.message}")
     String configServer;
 
     @RequestMapping(value = "/hi")
