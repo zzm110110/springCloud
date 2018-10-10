@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @Value("${foo}")
-    String foo;
+    @Value("${democonfigclient.message}")
+    String configServer;
 
     @RequestMapping(value = "/hi")
     public String hi(){
-        return foo;
+        return configServer;
     }
 
 }
