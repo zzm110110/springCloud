@@ -1,4 +1,5 @@
 server:
+  #端口10002
   port: 10002
 
 spring:
