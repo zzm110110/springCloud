@@ -3,6 +3,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:10000/eureka/
 server:
+  #端口10004
   port: 10004
 spring:
   application:
