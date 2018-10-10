@@ -1,4 +1,5 @@
 server:
+  #端口10000
   port: 10000
 
 eureka:
