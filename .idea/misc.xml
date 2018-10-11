@@ -14,6 +14,11 @@
         <option value="$PROJECT_DIR$/eureka-client-one/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client-tow/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/service-amqp/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/service-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/service-zipkin/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,12 +1,12 @@
-package com.web.servicezipkin;
+package com.web.zipkin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ServiceZipkinApplication {
+public class ZipkinApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceZipkinApplication.class, args);
+        SpringApplication.run(ZipkinApplication.class, args);
     }
 }

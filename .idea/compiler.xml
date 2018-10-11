@@ -6,20 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-client" />
         <module name="config-server" />
         <module name="configserver" />
         <module name="eureka-client-one" />
         <module name="eureka-client-tow" />
         <module name="eureka-server" />
-        <module name="serice-feign" />
+        <module name="service-amqp" />
+        <module name="service-feign" />
         <module name="service-ribbon" />
+        <module name="service-zipkin" />
         <module name="service-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="config-client" target="1.8" />
       <module name="eurekaclientone" target="1.8" />
-      <module name="service-amqp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
