@@ -2,7 +2,10 @@ package com.web.eurekaclientone;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 
 /***
@@ -14,6 +17,15 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @SpringBootApplication
 @EnableEurekaClient
+/**
+ * 开启断路由
+ */
+@EnableHystrix
+/**
+ * 开启路由监控盘
+ */
+@EnableHystrixDashboard
+@EnableCircuitBreaker
 public class EurekaclientOneApplication {
 
     public static void main(String[] args) {

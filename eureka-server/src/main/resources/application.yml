@@ -4,7 +4,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: www.zzmmax.com
   client:
     registerWithEureka: false
     fetchRegistry: false

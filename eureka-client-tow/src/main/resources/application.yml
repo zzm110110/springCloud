@@ -4,9 +4,17 @@ server:
 
 spring:
   application:
-    name: eureka-client
+    name: eureka-client-tow
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:10000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"

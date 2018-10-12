@@ -1,0 +1,26 @@
+server:
+  port: 10013
+spring:
+  application:
+    name: service-turbine
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+#聚合监控配置
+turbine:
+  app-config: eureka-client-one,eureka-client-tow
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
+  combine-host-port: true
+  instanceUrlSuffix:
+    default: actuator/hystrix.stream
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka/

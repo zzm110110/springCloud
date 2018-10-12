@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/service-zipkin/service-zipkin.iml" filepath="$PROJECT_DIR$/service-zipkin/service-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-zipkin/service-zipkinserver/service-zipkin-server.iml" filepath="$PROJECT_DIR$/service-zipkin/service-zipkinserver/service-zipkin-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-zipkin/service-zipkin-server/zipkin-server.iml" filepath="$PROJECT_DIR$/service-zipkin/service-zipkin-server/zipkin-server.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka/
+server:
+  port: 10001
+spring:
+  application:
+    name: user-service
+  zipkin:
+    base-url: http://118.126.104.111:9411/
+  sleuth:
+    sampler:
+      probability: 1

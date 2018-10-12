@@ -11,6 +11,8 @@
 
     <modules>
         <module>config-server</module>
+        <module>teste</module>
+        <module>service-sleuth</module>
     </modules>
 
     <parent>

@@ -1,0 +1,12 @@
+server:
+  port: 10011
+spring:
+  profiles: peer1
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:10012/eureka/
+    registerWithEureka: true
+    fetchRegistry: true

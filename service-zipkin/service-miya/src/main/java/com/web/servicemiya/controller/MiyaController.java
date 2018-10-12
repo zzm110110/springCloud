@@ -19,32 +19,22 @@ import java.util.logging.Logger;
  **/
 @RestController
 public class MiyaController {
+
     private static final Logger LOG = Logger.getLogger(ServiceMiyaApplication.class.getName());
-
-
-    @RequestMapping("/hi")
-    public String home(){
-        LOG.log(Level.INFO, "hi is being called");
-        return "hi i'm miya!";
-    }
-
-    @RequestMapping("/miya")
-    public String info(){
-        LOG.log(Level.INFO, "info is being called");
-        return restTemplate.getForObject("http://localhost:10009/info",String.class);
-    }
 
     @Autowired
     private RestTemplate restTemplate;
 
-    @Bean
-    public RestTemplate getRestTemplate(){
-        return new RestTemplate();
+    @RequestMapping("/miya")
+    public String info() {
+        LOG.log(Level.INFO, "开始调用server-hi的服务");
+        return restTemplate.getForObject("http://localhost:10009/info", String.class);
     }
 
-
-    @Bean
-    public Sampler defaultSampler() {
-        return Sampler.ALWAYS_SAMPLE;
+    @RequestMapping("/hi")
+    public String home() {
+        LOG.log(Level.INFO, "我是servic-hi中的info接口");
+        return "我是servic-hi中的info接口";
     }
+
 }
